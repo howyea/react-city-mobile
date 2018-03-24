@@ -6,7 +6,6 @@ import {
     InputItem
 } from 'antd-mobile';
 import { QueueAnimation, Province, StyleNavBar } from '../styledComponents/choiceCity';
-import cityData from '../cityData/cityData';
 const Link = ScrollAnim.Link;
 const getQueryString = (name) => {
     const reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
@@ -27,7 +26,7 @@ export default class ChoiceCity extends Component {
         searchCityId: 'page1'
     }
     componentDidMount() {
-        const { cityArr, hotCitys } = cityData;
+        const { cityArr, hotCitys } = this.props.cityData;
         this.setState({
             citys: cityArr,
             hotCitys: hotCitys
