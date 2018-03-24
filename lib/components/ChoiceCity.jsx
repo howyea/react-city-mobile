@@ -5,11 +5,8 @@ import {
     Icon,
     InputItem
 } from 'antd-mobile';
-import {
-    StyleNavBar
-} from './styledComponents/global';
-import { QueueAnimation, Province } from '../styledComponents/choiceCity';
-import cityData from '../cityData/cityData.json';
+import { QueueAnimation, Province, StyleNavBar } from '../styledComponents/choiceCity';
+import cityData from '../cityData/cityData';
 const Link = ScrollAnim.Link;
 const getQueryString = (name) => {
     const reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
