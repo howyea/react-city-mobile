@@ -1,6 +1,6 @@
 {
   "name": "react-city-mobile",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "This is a component that selects cities about react.",
   "main": "build/index.js",
   "scripts": {
