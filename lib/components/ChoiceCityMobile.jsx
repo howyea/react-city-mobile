@@ -45,7 +45,6 @@ export default class ChoiceCity extends Component {
                 id={ `page${index}${i}` }
                 cityId={ v.region_id }
                 cityName={ v.name }
-                provinceName={ value.parent_id }
                 >{ v.name }</div>
             )
         })
@@ -75,9 +74,8 @@ export default class ChoiceCity extends Component {
         return hots.map(value => {
             return (
                 <div className="list"
-                cityId={ value.id }
+                cityId={ value.region_id }
                 cityName={ value.name }
-                provinceName={ value.parent_id }
                 >{ value.name }</div>
             )
         })
