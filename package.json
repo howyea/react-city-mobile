@@ -1,6 +1,6 @@
 {
   "name": "react-city-mobile",
-  "version": "0.1.35",
+  "version": "0.2.0",
   "description": "This is a component that selects cities about react.",
   "main": "build/index.js",
   "eslintConfig": {
