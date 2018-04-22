@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 import QueueAnim from 'rc-queue-anim';
-import {
-    NavBar
-} from 'antd-mobile';
+
 const alignCenter = css`
     display: flex;
     justify-content: center;
@@ -34,22 +32,10 @@ export const QueueAnimation = styled(QueueAnim)`
             height: 0.6rem;
             background-color: #f3f3f3;
             border-radius: 0.08rem;
-            .am-list-item {
-                width: 3.46rem;
-                background-color: #f3f3f3;
-                &.am-input-item {
-                    padding-left: 0;
-                    height: 0.6rem;
-                    min-height: auto;
-                    .am-input-label {
-                        ${ alignCenter }
-                    }
-                    .am-input-control {
-                        input {
-                            text-align: center;
-                        }
-                    }
-                }
+            overflow: hidden;
+            input {
+                flex: 0.9;
+                text-align: center;
             }
         }
     }
@@ -73,6 +59,7 @@ export const QueueAnimation = styled(QueueAnim)`
                     border-radius: 0.08rem;
                     color: #3c3c3c;
                     text-align: center;
+                    font-size: 0.3rem;
                 }
             }
         }
@@ -109,16 +96,6 @@ export const Province = styled.div`
     .list {
         color: #22a666;
         margin-bottom: 0.1rem;
-    }
-`;
-
-export const StyleNavBar = styled(NavBar)`
-    border-bottom: 1px solid #dedede;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    & + div {
-        margin-top: 45px;
+        font-size: 0.3rem;
     }
 `;
