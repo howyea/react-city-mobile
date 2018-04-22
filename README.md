@@ -2,7 +2,7 @@ React City Mobile
 ====================
 
 ## Introduction
-![](https://github.com/huiyuye/react-city-mobile/images/demo_img.jpg)
+![](https://github.com/huiyuye/react-city-mobile/blob/master/images/demo_img.jpg)
 ## Installation
 
 ```
